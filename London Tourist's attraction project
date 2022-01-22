@@ -1,0 +1,48 @@
+body {
+  /*Background color for entire page*/
+text-align: center;
+background-image: url("https://mcdn.wallpapersafari.com/medium/94/25/I5itoy.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.City {
+/*Styling the top "header" for my page*/
+outline-offset:1px; border:1px solid white; 
+  padding-top: 1px; 
+  padding-left: 1px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  text-align: center;
+}
+
+.City1{ 
+  /*Styling the Button Links for my page*/
+font-size:20px;  font-family: "Courier New", Courier, monospace; text-align: center;}
+a:link {color:white; border-radius:20px;}
+a:link, a:visited{
+  text-decoration:none; padding:5px 10px;} 
+a:active, a:hover{
+  border:2px solid white; background-color:white;}
+
+p {color:black;}
+
+
+table{width:60%} td:hover{color:white;
+  border:2px solid white; background-color:black;}
+th{background-color:black; color:grey;}
+  
+
+
+h5 span { 
+    background-color:grey; padding:3px; color:#F7EEEE; border:2px solid white; border-radius:30px;}
+
+
+.MOMO{font-size:16px;
+  list-style-position:inside;
+}
+upload{
+  border: 2px solid white;
+  border-radius: 70px; 
+}
