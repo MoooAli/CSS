@@ -1,0 +1,76 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "header header header header"
+    "aside main main main"
+    "aside main main main"
+    "aside main main main"
+    "footer footer footer footer";
+}
+.grid-container > * {
+  padding: 20px;
+  background-color: rgb(89, 88, 88);
+  color: #fff;
+}
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+aside {
+  grid-area: aside;
+}
+footer {
+  grid-area: footer;
+}
+
+.ul-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: flex-end;
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: flex-end;
+}
+li {
+  margin: 0 5px;
+}
+aside {
+  grid-area: aside;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: minmax(100px, auto);
+}
+aside p {
+  border: 1px solid rgb(251, 247, 247);
+  line-height: 100px;
+}
+
+@media (max-width: 575px) {
+  .grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+      "header header header header"
+      "aside aside aside aside"
+      "aside aside aside aside"
+      "main main main main"
+      "main main main main"
+      "footer footer footer footer";
+  }
+}
